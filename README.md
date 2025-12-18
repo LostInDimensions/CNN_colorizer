@@ -5,7 +5,7 @@ This project implements a neural network that predicts the *a* and *b* color cha
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
 
 * **Automatic Model Download:** The script automatically fetches the pre-trained weights (`.pth`) upon first use.
-* **Architecture:** This model uses a **U-Net** with a pre-trained **ResNet34 backbone** and **Squeeze-and-Excitation (SE) blocks**.
+* **Architecture:** This model uses a **U-Net** with a pre-trained **ResNet34 encoder** and **Squeeze-and-Excitation (SE) blocks**.
 * **GAN Fine-Tuning:** The model was fine-tuned using a Generative Adversarial Network approach.
 
 ## **Installation**
