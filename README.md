@@ -1,4 +1,4 @@
-# PyTorch Image Colorization
+# CNN Image Colorization
 
 This project implements a neural network that predicts the *a* and *b* color channels of an image in the Lab color space, given the *L* (Lightness) channel.
 
@@ -35,7 +35,7 @@ You can specify any image path using the `--image` argument:
 python colorizer.py --image your_image_path.jpg
 ```
 
-**Note:** The model weights will be downloaded automatically (~108 MB) the first time you run the script. 
+**Note:** The model weights will be downloaded automatically (~106 MB) the first time you run the script. 
 
 ## **Credits & References**
 
