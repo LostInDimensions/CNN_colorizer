@@ -4,8 +4,8 @@ This project implements a neural network that predicts the *a* and *b* color cha
 
 <figure>
   <p float="left">
-    <img src="imgs/test_img2.jpg" height="300" />
-    <img src="out_imgs/colorized_test_img2.jpg" height="300" />
+    <img src="imgs/test_img1.jpg" height="300" />
+    <img src="out_imgs/colorized_test_img1.jpg" height="300" />
   </p>
   <figcaption>
     <b>Left:</b> Grayscale input (L channel) &nbsp;&nbsp;
@@ -13,6 +13,7 @@ This project implements a neural network that predicts the *a* and *b* color cha
   </figcaption>
 </figure>
 
+<p></p>
 
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
 
