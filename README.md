@@ -2,18 +2,11 @@
 
 This project implements a neural network that predicts the *a* and *b* color channels of an image in the Lab color space, given the *L* (Lightness) channel.
 
-<figure>
-  <p float="left">
-    <img src="imgs/test_img1.jpg" height="300" />
-    <img src="out_imgs/colorized_test_img1.jpg" height="300" />
-  </p>
-  <figcaption>
-    <b>Left:</b> Grayscale input (L channel) &nbsp;&nbsp;
-    <b>Right:</b> Colorized output
-  </figcaption>
-</figure>
 
-<p></p>
+| Grayscale Input (L channel) | Colorized Output |
+|----------------------------|------------------|
+| <img src="imgs/test_img1.jpg" height="250"/> | <img src="out_imgs/colorized_test_img1.jpg" height="250"/> |
+
 
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
 
