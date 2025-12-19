@@ -5,7 +5,7 @@ This project implements a neural network that predicts the *a* and *b* color cha
 
 | Grayscale Input (L channel) | Colorized Output |
 |----------------------------|------------------|
-| <img src="imgs/test_img1.jpg" height="250"/> | <img src="out_imgs/colorized_test_img1.jpg" height="250"/> |
+| <img src="imgs/test_img1.jpg" height="300"/> | <img src="out_imgs/colorized_test_img1.jpg" height="300"/> |
 
 
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
@@ -56,7 +56,7 @@ python colorizer.py --image your_image_path.jpg
 The model was trained on images with a resolution of **256×256** pixels.  
 It generalizes well to higher resolutions, and larger images can be colorized without resizing.
 
-There is no strict resolution limit. However, **artifacts may become more noticeable for very large images**, typically starting around **~1200×1200 pixels and above**, depending on image content.
+There is no strict resolution limit. However, **artifacts may become more noticeable for very large images**, typically starting around **~1500x1500 pixels and above**, depending on image content.
 
 
 ## **Credits & References**
