@@ -2,11 +2,23 @@
 
 This project implements a neural network that predicts the *a* and *b* color channels of an image in the Lab color space, given the *L* (Lightness) channel.
 
+<p float="left">
+  <img src="test_img1.jpg" width="300" />
+  <img src="colorized_test_img1.jpg" width="300" />
+</p>
+
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
 
 * **Automatic Model Download:** The script automatically fetches the pre-trained weights (`.pth`) upon first use.
 * **Architecture:** This model uses a **U-Net** with a pre-trained **ResNet34 encoder** and **Squeeze-and-Excitation (SE) blocks**.
 * **GAN Fine-Tuning:** The model was fine-tuned using a Generative Adversarial Network approach.
+
+
+## Requirements
+
+* Python
+* Git (required to clone the repository)
+
 
 ## **Installation**
 
@@ -36,6 +48,15 @@ python colorizer.py --image your_image_path.jpg
 ```
 
 **Note:** The model weights will be downloaded automatically (~106 MB) the first time you run the script. 
+
+
+## Image Resolution
+
+The model was trained on images with a resolution of **256×256** pixels.  
+It generalizes well to higher resolutions, and larger images can be colorized without resizing.
+
+There is no strict resolution limit. However, **artifacts may become more noticeable for very large images**, typically starting around **~1200×1200 pixels and above**, depending on image content.
+
 
 ## **Credits & References**
 
