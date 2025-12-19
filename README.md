@@ -3,8 +3,8 @@
 This project implements a neural network that predicts the *a* and *b* color channels of an image in the Lab color space, given the *L* (Lightness) channel.
 
 <p float="left">
-  <img src="test_img1.jpg" width="300" />
-  <img src="colorized_test_img1.jpg" width="300" />
+  <img src="imgs/test_img1.jpg" width="300" />
+  <img src="out_imgs/colorized_test_img1.jpg" width="300" />
 </p>
 
 While inspired by **"Colorful Image Colorization" (Zhang et al.)**, this implementation diverges in architecture and training strategy.
