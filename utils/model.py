@@ -39,7 +39,7 @@ class DecoderBlock(nn.Module):
 
 
 class UNetColorizationNet(nn.Module):
-    def __init__(self, Q_out=313):
+    def __init__(self):
         super(UNetColorizationNet, self).__init__()
 
         resnet = models.resnet34(weights=models.ResNet34_Weights.IMAGENET1K_V1)
@@ -66,7 +66,7 @@ class UNetColorizationNet(nn.Module):
 
         self.dec0 = DecoderBlock(in_channels=64 + 1, mid_channels=32, out_channels=32)
 
-        self.output_head = nn.Conv2d(32, Q_out, kernel_size=3, padding=1)
+        self.output_head = nn.Conv2d(32, 313, kernel_size=3, padding=1)
 
     def forward(self, x_in):
         x_skip1 = self.encoder_conv1(x_in)
